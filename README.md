@@ -44,7 +44,9 @@ npm run dev
 
 ---
 
-## Ciente
+## Cliente
+
 ![Formulário](./prints/html.png)
 - Resposta:
+
 ![Formulário](./prints/dados.png)
