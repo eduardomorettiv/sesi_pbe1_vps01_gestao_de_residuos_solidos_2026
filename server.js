@@ -17,12 +17,17 @@ const mostrarespecifico = (req, res)=>{
     }
 }
 
+function autoIncrement() {
+    return Number(dados[dados.length - 1].id) + 1
+}
+
 const adicionar = (req, res)=>{
     if(req.body){
         dados.push(req.body)
+        dados.id = autoIncrement()
         res.send("dados adicionados")
     }else{
-        res.send("erro ao adicionar seu dados")
+        res.send("erro ao adicionar seus dados")
     }
 }
 
@@ -57,16 +62,18 @@ const excluir=(req, res)=>{
 //configurações
 const app = express()
 app.use(express.urlencoded({extended: true}))
+app.use(express.json())
 const porta = 3000
 
 //rotas
 app.get("/", mostrar)
-app.get("/", mostrarespecifico)
+app.get("/:id", mostrarespecifico)
 app.post("/", adicionar)
 app.put("/:id", alterar)
 app.delete("/", excluir)
 
 //porta do servidor
 app.listen(porta, ()=>{
-    console.log(`servidor: http://localhost${porta}`)
+    console.log(`servidor: http://localhost:${porta}`)
+    console.log(`cliente: http://127.0.0.1:5500/cliente/index.html`)
 })

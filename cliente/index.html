@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <title>Gestao de residuos solidos</title>
+    </head>
+    <body>
+        <center>
+            <H1>Nova gestão de residuos sólidos</H1>
+            <form action="http://localhost:3000" method="post">
+                id:
+                <br>
+                <input type="number" name="id" required>
+                <br><br>
+                local:
+                <br>
+                <input type="text" name="local" required>
+                <br><br>
+                tipo do resíduo:
+                <br>
+                <input type="text" name="tipo_residuo" required>
+                <br><br>
+                Nível de risco:
+                <select name="nivel_risco" required>
+                    <option value="alto">alto</option>
+                    <option value="medio">médio</option>
+                    <option value="baixo">baixo</option>
+                </select>
+                <br><br>
+                data do registro:
+                <br>
+                <input type="date" name="data_registro" required>
+                <br><br>
+                status:
+                <br>
+                <select name="data_registro" required>
+                    <option value="concluido">concluido</option>
+                    <option value="pendente">pendente</option>
+                </select>
+                <br><br>
+                <button type="reset" style="background-color: rgb(255, 129, 129);">Limpar</button>
+                <button type="submit" style="background-color: rgb(174, 255, 154);">Enviar</button>
+            </form>
+        </center>
+    </body>
+</html>
