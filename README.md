@@ -51,6 +51,6 @@ npm run dev
 ---
 
 ## Ciente
-- ![Formulário](./prints/web.png)
+- ![Formulário](./prints/html.png)
 - Resposta:
-- ![Formulário](./prints/envio.png)
+- ![Formulário](./prints/dados.png)
