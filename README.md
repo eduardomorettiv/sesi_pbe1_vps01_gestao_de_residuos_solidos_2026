@@ -23,22 +23,22 @@ npm run dev
 
 - Mostrar
 ![mostrar](./prints/mostrar.png)
-
+---
 - Buscar por id
 ![id](./prints/buscarid.png)
-
+---
 - Buscar por local
 ![local](./prints/buscarlocal.png)
-
+---
 - Buscar por tipo
 ![tipo](./prints/buscartipo.png)
-
+---
 - Adicionar
 ![adicionar](./prints/adicionar.png)
-
+---
 - Alterar
 ![alterar](./prints/alterar.png)
-
+---
 - Excluir
 ![adicionar](./prints/excluir.png)
 
